@@ -1,5 +1,7 @@
 import Layout from "@/components/Layout";
 import { Target, Eye, Heart } from "lucide-react";
+import fotoKetua from "@/assets/pidato-ppi-uk-2026.jpg";
+import fotoPelantikan from "@/assets/ppi-uk-pancasila.jpg";
 
 const values = [
   { icon: Target, title: "Mission", text: "To unite and empower Indonesian students across the UK through education, collaboration, and community." },
@@ -24,6 +26,7 @@ const About = () => (
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Our Story</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
+          <img src={fotoPelantikan} alt="PPI UK Pelantikan"  />
           <p>
             Perhimpunan Pelajar Indonesia di United Kingdom (PPI UK) is the largest
             Indonesian student organisation in the UK. Founded with the purpose of
@@ -31,6 +34,8 @@ const About = () => (
             has grown into a vibrant community of scholars, researchers, and
             professionals.
           </p>
+
+          <img src={fotoKetua} alt="Ketua PPI UK 2026"  />
           <p>
             Through events, academic forums, career workshops, and cultural
             celebrations, we create an environment where Indonesian students can thrive
